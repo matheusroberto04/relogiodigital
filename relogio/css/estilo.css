@@ -78,3 +78,31 @@ body{
     border-radius: 50%;
     z-index: 1;
 }
+.hand{
+    width: 50%;
+    height: 6px;
+    top: 50%;
+    right: 50%;
+    position: absolute;
+    border-radius: 6px;
+    background: #61afff;
+    transform-origin: 100%;
+    transform: rotate(90deg);
+    transition-timing-function: cubic-bezier(0.1,2.7,0.58,1);
+}
+.hand.hour-hand{
+    width: 30%;
+    z-index: 3;
+}
+.hand.min-hand{
+    height: 3px;
+    width: 40%;
+    z-index: 10;
+    background: #741111;
+}
+.hand.sec-hand{
+    height: 2px;
+    width: 45%;
+    z-index: 13;
+    background: #741111;
+}
